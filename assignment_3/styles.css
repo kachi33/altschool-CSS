@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a5a4cc;
+    height: 100vh;
+    max-width: 100vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Newsreader', serif;
+}
+
+#card{
+    width: 630px;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    font-size: 20px;
+
+}
+
+.badge{
+    background-color: #feedb0;
+    width: 258px;
+    border-radius: 5px 40px 40px 5px;
+    position: absolute;
+    left: -16px;
+    top: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#card img{
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content{
+    margin: 30px 20px;
+}
+
+.card-content h1{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.card-content h1 span{
+    font-size: 20px;
+    color: #888183;
+}
+
+.card-content p{
+    line-height: 30px;
+}

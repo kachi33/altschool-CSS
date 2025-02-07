@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #F7FDFC;
+    padding: 20px;
+    font-family: 'Newsreader', serif;
+    line-height: 25px;
+
+
+}
+
+/* for desktop viewport */
+@media (min-width: 1050px){
+    body{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.header{
+    margin: 30px 0 ;
+}
+
+.logo{
+    width: 39px;
+    margin-bottom: 20px;
+    
+}
+
+.logo img{
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+}
+
+.header h1{
+    margin-bottom: 10px;
+    padding: 5px 0;
+    font-family: 'Newsreader';
+
+}
+
+.header p{
+    color: #737373;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+.content{
+    max-width: 580px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: stretch; */
+    box-shadow: 0px 4px 50px 0px #0408131A;
+    background: #FFFFFF;
+    /* width: 327px; */
+    max-height: 870px;
+    top: 286px;
+    left: 24px;
+    padding: 15px ;
+    
+}
+
+form label{
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+form input, select{
+    height: 48px;
+    margin-bottom: 20px;
+    color: #737373;
+    border: 1px solid #F0F0F0;
+    padding-left: 10px;
+}
+
+form input> *:last-child {
+    width: 500px;
+    /* Probable cause!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+
+#register{
+    background: #2EC4B6;
+    box-shadow: 0px 10px 40px 0px #0000001A;
+    border: none;
+    border-radius: 2px;
+    color: #ffff;
+
+}
+
+.content p{
+    /* margin: 20px 0 0 30px ; */
+    font-size: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.content p a{
+    text-decoration: underline;
+    color: #2EC4B6;
+    
+}
