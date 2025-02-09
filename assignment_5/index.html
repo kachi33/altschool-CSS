@@ -1,141 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Checkout page for WP Pusher. Fill in your details and payment info.">
-  <title>WP_Pusher</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Checkout page for WP Pusher. Fill in your details and payment info."
+    />
+    <title>WP_Pusher</title>
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- page header -->
-  <header>
-    <div class="logo">
-      <img src="assets/wppusher-logo copy.svg" alt="Logo">
-      <!-- <h1>WP Pusher</h1> -->
-    </div>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/latest/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/wppusher-logo copy.svg" alt="Logo" />
+      </div>
 
-    <!-- navigation links -->
-    <nav>
-      <ul>
-        <li>Download</li>
-        <li> Learn more</li>
-        <li>Pricing</li>
-        <li>Account</li>
-      </ul>
-    </nav>
-  </header>
+      <!-- navigation  -->
+      <nav>
+        <ul>
+          <li>Download</li>
+          <li>Learn more</li>
+          <li>Pricing</li>
+          <li>Account</li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- page main content -->
-  <main>
-
-    <!-- checkout card -->
-    <section class="card" >
-
-      <!-- chekout form -->
-      <section class="checkout-form">
-        <form>
-          <h2>Checkout</h2>
-
-            <!-- basic information section -->
+    <!-- main content -->
+    <main>
+      <section class="card">
+        <!-- chekout form -->
+        <section class="checkout-form">
+          <form>
+            <h2>Checkout</h2>
             <section class="info-section">
               <h3>Your Basic Information</h3>
-              <label for="first-name">First Name</label>
-              <input name="first-name" id="first-name" type="text" required aria-required="true" autofocus />
-          
-              <label for="last-name">Last Name</label>
-              <input name="last-name" id="last-name" type="text" required aria-required="true" />
-          
-              <label for="email">E-mail</label>
-              <input name="email" id="email" type="email" required aria-required="true" />
+              <label for="first-name"
+                >First Name
+                <input
+                  name="first-name"
+                  id="first-name"
+                  type="text"
+                  required
+                  aria-required="true"
+                  autofocus
+                />
+              </label>
+
+              <label for="last-name"
+                >Last Name
+                <input
+                  name="last-name"
+                  id="last-name"
+                  type="text"
+                  required
+                  aria-required="true"
+                />
+              </label>
+
+              <label class="email" for="email"
+                >E-mail
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  required
+                  aria-required="true"
+                />
+              </label>
             </section>
 
-          <!-- Payment information section -->
             <section class="payment-section">
               <h3>Your Payment Information</h3>
-              <label for="credit-card">Credit Card</label>
-              <input
-                class="card__input"
-                type="text"
-                id="credit-card"
-                name="credit-card"
-                placeholder="Card Number MM/YY CCV"
-                pattern="[0-9\s]{13,19}"
-                maxlength="26"
-                inputmode="numeric"
-                autocomplete="cc-number"
-                required
-                aria-required="true"
-              />
+              <label for="credit-card"
+                >Credit Card
+
+                <input
+                  class="card__input"
+                  type="text"
+                  id="credit-card"
+                  name="credit-card"
+                  placeholder="Card Number"
+                  pattern="[0-9\s]{13,19}"
+                  maxlength="26"
+                  inputmode="numeric"
+                  autocomplete="cc-number"
+                  required
+                  aria-required="true"
+                />
+                <input
+                  class="MM/YY"
+                  type="text"
+                  id="MM/YY"
+                  name="MM/YY"
+                  placeholder="MM/YY"
+                  maxlength="5"
+                  required
+                  aria-required="true"
+                />
+                <input
+                  class="CCV"
+                  type="number"
+                  id="CCV"
+                  name="CCV"
+                  placeholder="CCV"
+                  maxlength="3"
+                  inputmode="numeric"
+                  required
+                  aria-required="true"
+                />
+              </label>
             </section>
-          
-            <!-- submit button -->
+
             <button type="submit">Buy WP Pusher</button>
-        </form>
-          
-        <!-- support section -->
-        <section class="support-section">
-          <i>Y</i>
-          <p>Need any help? Don’t hesitate to <a href="whomever:support@example.com">contact support</a>!</p>
+          </form>
+
+          <!-- support section -->
+          <section class="support-section">
+          <i class="fa fa-question-circle-o" aria-hidden="true"></i> <!-- 🚧  -->
+            <p>
+              Need any help? Don’t hesitate to
+              <a href="whomever:support@example.com">contact support</a>!
+            </p>
+          </section>
         </section>
 
-    </section>
-        <!-- end of checkout form -->
-        
-
-    <!-- sidebar section -->
-      <section class="sidebar">
-
-          <!-- Plan section -->
+        <!-- sidebar section -->
+        <section class="sidebar">
           <section class="plan">
-            <h3>Freelancer</h3> 
+            <h3>Freelancer</h3>
             <div class="price">
-                <span class="price-currency">$</span>
-                <div>
-                    <span class="price-amount">99</span>
-                    <span class="price-year">/ year</span>
-                </div>
+              <span class="price-currency">$</span>
+              <div>
+                <span class="price-amount">99</span>
+                <span class="price-year">/ year</span>
+              </div>
             </div>
             <p>
-              Automatically renews <br> after 1 year
+              Automatically renews <br />
+              after 1 year
             </p>
-        </section>
+          </section>
 
-        <!-- Details with checked icons section -->
-         <section class="details">
+          <!-- Details with checked icons section -->
+          <section class="details">
             <ul>
               <li>Use on <strong>5</strong> client sites</li>
               <li>Private respositories</li>
               <li>Email support</li>
             </ul>
-         </section>
+          </section>
 
-         <p>Need 20 client sites?<br>
-         <a href="#" >Switch to the Agency plan.</a></p> <!-- SWITCH?-->
-
-         <!-- review section -->
-         <blockquote class="review">
-          <p>FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue,
-              and the customer support is awesome!
+          <p>
+            Need 20 client sites?<br />
+            <a href="#">Switch to the Agency plan.</a>
           </p>
+          <!-- SWITCH?-->
 
-          <figure class="reviewer">
-              <img src="#" alt="reviewer image">
+          <blockquote class="review">
+            <p>
+              FTP is horrible to deal with. <strong>WP Pusher</strong> solves that
+              issue, and the customer support is awesome!
+            </p>
+
+            <figure class="reviewer">
+              <img src="#" alt="reviewer image" />
               <figcaption>Kirk Beard</figcaption>
-          </figure>
-        </blockquote>
-
+            </figure>
+          </blockquote>
+        </section>
       </section>
-    
-      </section>
-
-    </section>
-
-
-    <!-- page footer -->
-    <footer>© 2018 WP Pusher IVS  · <a href="#"> Terms of Service</a></footer>
-  </main>
-  
-</body>
+      <!-- page footer -->
+      <footer>© 2018 WP Pusher IVS · <a href="#"> Terms of Service</a></footer>
+    </main>
+  </body>
 </html>
