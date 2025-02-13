@@ -10,8 +10,14 @@
     <title>WP_Pusher</title>
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- fontd -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/latest/css/all.min.css">
+  
   </head>
   <body>
     <header>
@@ -35,8 +41,8 @@
       <section class="card">
         <!-- chekout form -->
         <section class="checkout-form">
+          <h2>Checkout</h2>
           <form>
-            <h2>Checkout</h2>
             <section class="info-section">
               <h3>Your Basic Information</h3>
               <label for="first-name"
@@ -45,6 +51,7 @@
                   name="first-name"
                   id="first-name"
                   type="text"
+                  placeholder="Jane"
                   required
                   aria-required="true"
                   autofocus
@@ -57,6 +64,7 @@
                   name="last-name"
                   id="last-name"
                   type="text"
+                  placeholder="Doe"
                   required
                   aria-required="true"
                 />
@@ -68,6 +76,7 @@
                   name="email"
                   id="email"
                   type="email"
+                  placeholder="janedoe@example.com"
                   required
                   aria-required="true"
                 />
@@ -78,6 +87,7 @@
               <h3>Your Payment Information</h3>
               <label for="credit-card"
                 >Credit Card
+              <div class="card-details">
 
                 <input
                   class="card__input"
@@ -113,6 +123,7 @@
                   required
                   aria-required="true"
                 />
+              </div>
               </label>
             </section>
 

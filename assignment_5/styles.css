@@ -12,6 +12,7 @@
     grid-template-rows: 70px auto;
     padding: 10px 20px;
     background: #F5F8FA;
+    font-family: "Lato", serif;
   }
   
   /* Header */
@@ -58,41 +59,41 @@
   .card {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:65% 35%;
     max-height: 80vh;
   }
   
-  .checkout-form{ /* form, support section*/
+  .checkout-form{ /* h2, form, support section*/
     background: #fff;
     display: grid;
     width: 100%;
     padding: 20px;
+    color: #1D2C3C;
   }
 
   form{
     display: grid;
-    /* grid-template-rows: 80px 221px 130px 40px; */
-    gap: 30px;
-    
+    gap: 20px;
   }
   
   .info-section,
   .payment-section{
-    border-bottom: 1px solid #333;
-    padding: 20px 0;
+    border-bottom:1px solid #F5F7FA;
+    padding: 10px 0;
+
   }
   
-  form h2{
+   h2{
     font-size: 30px;
     font-weight: 400;
-    border-bottom:1px solid #333;
+    border-bottom:1px solid #F5F7FA;
   }
   
-  form section:first-of-type{
+  form section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
   }
+
   .info-section label:nth-of-type(3),
   form section h3{
     grid-column: span 2;
@@ -103,12 +104,17 @@
     margin-top: 5px;
     border: none;
     border-radius: 3px;
-    width: 227px;
+    width: 100%;
     background: #EDEFF2;
   }
 
   #email{
-    width: 310px;
+    display: block;
+    width: 70%;
+  }
+
+  .card-details{
+    display: flex;
   }
     
   /* Button */
@@ -126,6 +132,7 @@
   
   .support-section {
     font-size: 14px;
+    margin: 0 auto;
   }
   
   .support-section a {
@@ -138,5 +145,11 @@
     background: #1179BF;
     padding: 20px;
     color: #fff;
+    display: grid;
   }
+
+
   
+footer{
+  margin: 0 auto;
+}
